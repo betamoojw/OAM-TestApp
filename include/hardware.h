@@ -93,3 +93,9 @@
 //         #define HARDWARE_NAME "ESP32_WT32_ETH01"
 //     #endif
 #endif
+
+#if defined(DEVICE_MT_XIAO_RP2040) || \
+    defined(DEVICE_MT_XIAO_ESP32S3) || \
+    defined(DEVICE_MT_XIAO_ESP32C3)
+    #include "MTech_Hardware.h"
+#endif
